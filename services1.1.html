@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - KomputerAT</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>KomputerAT</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home1.1.html">Home</a></li>
+                <li><a href="services1.1.html">Layanan</a></li>
+                <li><a href="about1.1.html">Tentang Kami</a></li>
+                <li><a href="contatc1.1.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section  class="service-section" id="services">
+        <div class="service-section" id="services">
+
+            <img src="Computer Service Logo.png" alt="Layanan Kami">
+
+            <h2>Layanan Kami</h2>
+        <form id="serviceForm">
+            <label class="checkbox-container">Jasa Perakitan Komputer
+                <input type="radio" id="rakitan" name="service" value="rakitan">
+                <span class="checkbox-custom"></span>
+            </label>
+
+            <label class="checkbox-container">Jasa Perbaikan Komputer
+                <input type="radio" id="perbaikan" name="service" value="perbaikan">
+                <span class="checkbox-custom"></span>
+            </label>
+
+            <label class="checkbox-container">Jasa Upgrade Komponen
+                <input type="radio" id="upgrade" name="service" value="upgrade">
+                <span class="checkbox-custom"></span>
+            </label>
+
+            <label class="checkbox-container">Instalasi Software
+                <input type="radio" id="instalasi" name="service" value="instalasi">
+                <span class="checkbox-custom"></span>
+            </label>
+    
+                <button type="button" onclick="redirectToForm()">Kirim</button>
+
+            </form>
+        </div>
+</section>
+
+<script src="script.js"></script>
+    <footer>
+        <p>© 2024 KomputerAT. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

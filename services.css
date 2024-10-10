@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Services Section */
+.service-section {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Gaya umum untuk form */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Tampilan radio button */
+.checkbox-container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Gaya custom untuk radio */
+.checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkbox-container input[type="radio"]:checked ~ .checkbox-custom {
+    background-color: #007BFF; /* Warna biru saat terpilih */
+}
+
+/* Gaya bulatan di dalam radio button yang tercentang */
+.checkbox-custom::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input[type="radio"]:checked ~ .checkbox-custom:after {
+    display: block;
+}
+
+/* Gaya bulatan kecil di dalam radio button */
+.checkbox-container .checkbox-custom:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.service-section img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
