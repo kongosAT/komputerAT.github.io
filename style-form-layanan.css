@@ -1,67 +1,63 @@
-/* Gaya umum untuk form */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
+/* Style form-container */
 .form-container {
-    background-color: white;
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 500px; /* Atur lebar maksimum form */
+    margin: 0 auto; /* Centering secara horizontal */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }
 
-h2 {
-    text-align: center;
-    color: #007BFF; /* Warna biru untuk judul */
-    margin-bottom: 20px;
+/* Style untuk form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar elemen form */
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-input[type="submit"] {
-    width: 100%;
+/* Style untuk input, select, textarea */
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%; /* Memastikan input menyesuaikan lebar kontainer */
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
-textarea {
-    resize: vertical;
-}
-
-/* Button kirim */
+/* Style untuk button */
 button[type="submit"] {
-    background-color: #007BFF;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Warna hijau untuk tombol */
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
-    margin-top: 10px;
 }
 
+/* Hover efek pada tombol */
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Warna tombol saat hover */
+    background-color: #45a049;
 }
+
+/* Responsive CSS untuk form */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%; /* Kurangi lebar form pada layar kecil */
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
 
 /* Untuk mobile */
 @media (max-width: 600px) {
