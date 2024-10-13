@@ -8,21 +8,38 @@
 </head>
 <body>
     <div class="form-container">
+        <div class="form-container">
         <h2>Formulir Layanan KomputerAT</h2>
-        <form action="https://example.com/form-handler" method="POST">
+        <!-- Menggunakan FormSubmit.co untuk pengiriman email -->
+        <form action="https://formsubmit.co/torakarasu84@gmail.com" method="POST">
+            <!-- Field name -->
             <label for="name">Nama Lengkap</label>
             <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
 
+            <!-- Field email -->
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
 
+            <!-- Field layanan yang dipilih -->
             <label for="service">Layanan yang Dipilih</label>
-            <input type="text" id="service" name="service" readonly>
+            <select id="service" name="service" required>
+                <option value="">Pilih Layanan</option>
+                <option value="rakitan">Jasa Perakitan Komputer</option>
+                <option value="perbaikan">Jasa Perbaikan Komputer</option>
+                <option value="upgrade">Jasa Upgrade Komponen</option>
+                <option value="instalasi">Instalasi Software</option>
+            </select>
 
+            <!-- Field pesan tambahan -->
             <label for="message">Pesan Tambahan</label>
             <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda..."></textarea>
 
+            <!-- Mengirim form -->
             <button type="submit">Kirim</button>
+
+            <!-- FormSubmit.co hidden fields -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html"> <!-- Halaman redirect setelah kirim -->
+            <input type="hidden" name="_captcha" value="false"> <!-- Mematikan captcha -->
         </form>
     </div>
 
