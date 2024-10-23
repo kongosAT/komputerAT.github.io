@@ -42,7 +42,6 @@ function stickyNavbar() {
     }
 }
 
-
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     const overlay = document.querySelector('.overlay');
