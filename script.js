@@ -25,3 +25,29 @@ window.onload = function() {
         document.getElementById('service').value = selectedService;
     }
 };
+
+// Sticky Navbar Effect
+window.onscroll = function () {
+    stickyNavbar();
+};
+
+var navbar = document.querySelector('.navbar');
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+}
+
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.overlay');
+    
+    // Toggle class untuk nav links dan overlay
+    navLinks.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
