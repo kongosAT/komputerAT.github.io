@@ -115,7 +115,7 @@ body {
         display: flex;  /* Menampilkan hamburger pada layar kecil */
         position: fixed;
         top: 15px;
-        right: 20px;
+        right: 30px;
     }
 
     .overlay.active {
