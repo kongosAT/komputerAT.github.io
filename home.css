@@ -115,6 +115,11 @@ body {
     .nav-links li {
         margin-bottom: 20px;
     }
+
+    footer {
+        padding: 20px;
+        height: 0;
+    }
 }
 
 /* Animasi untuk bar ketika hamburger menu di klik */
@@ -151,5 +156,5 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: relative;
+    position: fixed;
 }
