@@ -122,7 +122,7 @@ body {
     }
 
     .sections-wrapper {
-        padding-bottom: 20px; 
+        padding-bottom: 20px; /* Beri sedikit ruang antara konten dan footer */
     }
 }
 
@@ -162,3 +162,4 @@ footer {
     width: 100%;
     position: relative;
 }
+
