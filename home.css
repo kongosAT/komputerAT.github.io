@@ -115,6 +115,15 @@ body {
     .nav-links li {
         margin-bottom: 20px;
     }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sections-wrapper {
+        padding-bottom: 20px; 
+    }
 }
 
 /* Animasi untuk bar ketika hamburger menu di klik */
